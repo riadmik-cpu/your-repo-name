@@ -1,0 +1,2 @@
+$env:OPENAI_API_KEY = "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
+python qa_bot/app.py
