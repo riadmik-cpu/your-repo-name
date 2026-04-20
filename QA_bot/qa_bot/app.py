@@ -2,6 +2,7 @@ import os
 from pathlib import Path
 from typing import Optional, Tuple
 
+from dotenv import load_dotenv
 import gradio as gr
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_openai import OpenAIEmbeddings, OpenAI
@@ -9,6 +10,9 @@ from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
+
+# Load environment variables from .env file
+load_dotenv()
 
 BASE_DIR = Path(__file__).resolve().parent
 CHROMA_DIR = BASE_DIR / "chroma_db"
@@ -130,4 +134,4 @@ if __name__ == "__main__":
         title="PDF QA Bot",
         description="Upload a PDF document and ask questions using LangChain + OpenAI embeddings.",
     )
-    interface.launch(share=False)
+    interface.launch(share=True)
