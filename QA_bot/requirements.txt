@@ -1,0 +1,11 @@
+# Python dependencies for PDF QA Bot - Compatible versions
+gradio==6.12.0
+chromadb==1.5.7
+langchain==0.2.17
+langchain-openai==0.1.25
+langchain-community==0.2.17
+langchain-text-splitters==0.2.4
+openai==1.58.1
+pypdf==6.10.2
+requests==2.33.1
+tiktoken==0.12.0
