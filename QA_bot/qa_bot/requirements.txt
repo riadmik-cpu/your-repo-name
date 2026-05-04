@@ -1,0 +1,13 @@
+# Python 3.14-compatible dependency set using OpenAI instead of IBM Watsonx.
+gradio==6.12.0
+chromadb==1.5.7
+langchain==1.2.15
+langchain-openai==0.2.9
+langchain-community==0.3.14
+langchain-text-splitters==0.3.11
+openai==2.32.0
+PyPDF2==3.0.1
+pypdf==6.10.2
+requests==2.33.1
+tiktoken==0.12.0
+python-dotenv==1.0.0
